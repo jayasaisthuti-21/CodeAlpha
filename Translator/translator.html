@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Language Translation Tool</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="card">
+    <h1>🌐 Language Translation Tool</h1>
+
+    <div class="lang-row">
+      <select id="sourceLang"></select>
+      <button class="swap-btn" id="swapBtn" title="Swap languages">⇄</button>
+      <select id="targetLang"></select>
+    </div>
+
+    <textarea id="inputText" placeholder="Type or paste text here..."></textarea>
+
+    <button class="translate-btn" id="translateBtn">Translate</button>
+    <div class="status" id="status"></div>
+
+    <div class="result-box" id="resultBox">
+      <div id="resultText"></div>
+      <div class="actions">
+        <button class="icon-btn" id="copyBtn">📋 Copy</button>
+        <button class="icon-btn" id="speakBtn">🔊 Listen</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
